@@ -1806,6 +1806,17 @@
 			display: block;
 			margin: 0 0 2em 0;
 		}
+		
+		.image.featured.double {
+			display: block;
+			width: 450px;
+			height: 200px;
+			background: url('images/test.jpg') 0 0;  
+		}
+		
+		.image.featured.double:hover {
+			background: url('images/test.jpg') 0 -210px;   
+			}
 
 			.image.featured img {
 				display: block;
