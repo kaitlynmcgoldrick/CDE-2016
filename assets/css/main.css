@@ -3209,3 +3209,62 @@
 			}
 
 	}
+	
+[class*="entypo-"]:before {
+   font-family: "Cabin", sans-serif;
+}
+a { 
+   text-decoration: none;
+}
+ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+.container {
+   margin: 0 auto;
+   padding: 20px 50px;
+   background: white;
+}
+#sticky-social {
+   right: 0;
+   position: fixed;
+   top: 150px;
+}
+#sticky-social a {
+   background: #333;
+   color: #fff;
+   display: block;
+   height: 52px;
+   font: 16px "Open Sans", sans-serif;
+   line-height: 52px;
+   position: relative;
+   text-align: center;
+   width: 52px;
+}
+#sticky-social a span {
+   line-height: 52px;
+   right: -120px;
+   top: 0px;
+   position: absolute;
+   text-align: center;
+   width:120px;
+}
+#sticky-social a:hover span {
+   right: 100%;
+}
+#sticky-social a[class*="facebook"],
+#sticky-social a[class*="facebook"]:hover,
+#sticky-social a[class*="facebook"] span { background: #3b5998; }
+
+#sticky-social a[class*="twitter"],
+#sticky-social a[class*="twitter"]:hover,
+#sticky-social a[class*="twitter"] span { background: #00aced; } 
+
+#sticky-social a[class*="linkedin"],
+#sticky-social a[class*="linkedin"]:hover,
+#sticky-social a[class*="linkedin"] span { background: #007bb6; }  
+
+#sticky-social a[class*="instagram"],
+#sticky-social a[class*="instagram"]:hover,
+#sticky-social a[class*="instagram"] span { background: #517fa4; }  
