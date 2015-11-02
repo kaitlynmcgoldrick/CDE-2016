@@ -16,29 +16,7 @@
 		<link href='http://fonts.googleapis.com/css?family=Cabin:400,700' rel='stylesheet' type='text/css'>
 		<script src="http://maps.googleapis.com/maps/api/js"></script>
         
-    <script>
-        var myCenter=new google.maps.LatLng(45.5042,-73.5747);
 
-        function initialize()
-        {
-            var mapProp = {
-              center:myCenter,
-              scrollwheel: false,    
-              zoom:14,
-              mapTypeId:google.maps.MapTypeId.ROADMAP
-              };
-
-            var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
-
-            var marker=new google.maps.Marker({
-              position:myCenter,
-              });
-
-            marker.setMap(map);
-        }
-
-        google.maps.event.addDomListener(window, 'load', initialize);
-    </script>
 	</head>
 	<body class="index">
 		<div id="page-wrapper">
@@ -311,14 +289,37 @@
 		</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollgress.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.dropotron.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/jquery.scrollgress.min.js"></script>
+        <script src="assets/js/skel.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+        <script src="assets/js/main.js"></script>
 
+        <script>
+            var myCenter=new google.maps.LatLng(45.5042,-73.5747);
+
+            function initialize()
+            {
+                var mapProp = {
+                  center:myCenter,
+                  scrollwheel: false,    
+                  zoom:14,
+                  mapTypeId:google.maps.MapTypeId.ROADMAP
+                  };
+
+                var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+                var marker=new google.maps.Marker({
+                  position:myCenter,
+                  });
+
+                marker.setMap(map);
+            }
+
+            google.maps.event.addDomListener(window, 'load', initialize);
+        </script>
 	</body>
 </html>
