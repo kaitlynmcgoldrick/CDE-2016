@@ -3230,6 +3230,7 @@ ul {
    right: 0;
    position: fixed;
    top: 150px;
+   z-index: 99999;
 }
 #sticky-social a {
    background: #333;
