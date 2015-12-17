@@ -1601,7 +1601,7 @@
 		color: inherit;
 		font-weight: 300;
 		line-height: 1.75em;
-		margin-bottom: 1em;
+		/*margin-bottom: 1em;*/
 		text-transform: uppercase;
 	}
 
@@ -1610,11 +1610,29 @@
 			text-decoration: none;
 			border: 0;
 		}
+	h1 {
+		    padding: 30px 0;
+    color: #12142a;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+    font-weight: 700;
+    font-size: 48px;
+	}
+
+	h1:after {
+    display: block;
+    width: 100px;
+    margin: 30px auto 0;
+    border-bottom: 4px solid #357e97;
+    content: "";
+	}
 
 	h2 {
 		font-size: 1.5em;
 		letter-spacing: 0.1em;
 	}
+
 
 	h3 {
 		font-size: 1.15em;
@@ -1656,8 +1674,8 @@
 	}
 
 	header.special {
-		margin-bottom: 5em;
-		padding-top: 7em;
+		/*margin-bottom: 5em;
+		padding-top: 7em;*/
 		position: relative;
 		text-align: center;
 	}
@@ -1687,7 +1705,7 @@
 
 		header.special h2 + p {
 			margin-bottom: 0;
-			padding-top: 1.5em;
+			/*padding-top: 1.5em;*/
 		}
 
 		header.special .icon {
@@ -2118,7 +2136,7 @@
 		}
 
 		.wrapper.style2 {
-			background-color: #83d3c9;
+			background-color: #83bfd3;
 			background-image: url("images/light-bl.svg"), url("images/light-br.svg");
 			background-position: bottom left, bottom right;
 			background-repeat: no-repeat, no-repeat;
@@ -2151,6 +2169,11 @@
 			color: inherit;
 			padding: 4em;
 			text-align: center;
+		}
+
+		.wrapper.style5 {
+			background-color: #83d3d3;
+			color: #fff;
 		}
 
 /* Header */
@@ -2565,8 +2588,8 @@
 		/* Section/Article */
 
 			header.special {
-				padding-top: 5.5em;
-				margin-bottom: 4em;
+				/*padding-top: 5.5em;
+				margin-bottom: 4em;*/
 			}
 
 	}
@@ -2729,8 +2752,8 @@
 			}
 
 			header.special {
-				margin-bottom: 4em;
-				padding-top: 5em;
+				/*margin-bottom: 4em;
+				padding-top: 5em;*/
 			}
 
 				header.special:before, header.special:after {
@@ -3226,6 +3249,7 @@ ul {
    padding: 20px 50px;
    background: white;
 }
+
 #sticky-social {
    right: 0;
    position: fixed;
@@ -3435,3 +3459,279 @@ ul {
 
 }
 
+#counter p {
+		margin: 0 0 0.5em 0;
+		text-align: center;
+}
+
+#counter .two {
+	padding-top: 3em;
+}
+
+#counter .three {
+	padding-top: 4em;
+}
+
+/*-----SCHEDULE-----*/
+.schedule #top .nav-schedule a {
+  color: rgba(255, 255, 255, 0.35); }
+
+ .nav-sub-schedule {
+  width: 100%;
+  /*margin: 0 0 2em;*/
+  text-align: center; }
+  /* line 6, /Users/cj/Projects/truenorth/source/stylesheets/_schedule.css.scss */
+  .nav-sub-schedule li {
+    display: inline-block;
+    margin: 0 6px; }
+    /* line 10, /Users/cj/Projects/truenorth/source/stylesheets/_schedule.css.scss */
+    .nav-sub-schedule li:first-child {
+      margin-left: 0; }
+    /* line 14, /Users/cj/Projects/truenorth/source/stylesheets/_schedule.css.scss */
+    .nav-sub-schedule li:last-child {
+      margin-right: 0; }
+    @media screen and (max-width: 480px) {
+      /* line 6, /Users/cj/Projects/truenorth/source/stylesheets/_schedule.css.scss */
+      .nav-sub-schedule li {
+        font-size: 13px; } }
+
+/* line 24, /Users/cj/Projects/truenorth/source/stylesheets/_schedule.css.scss */
+.full-schedule {
+  float: left;
+  display: block;
+  margin-left: auto;
+  margin-bottom: 80px; }
+  /* line 40, /Users/cj/.rvm/gems/ruby-2.0.0-p247/gems/neat-1.5.0/app/assets/stylesheets/grid/_span-columns.scss */
+  .full-schedule:last-child {
+    margin-right: 0; }
+  /* line 29, /Users/cj/Projects/truenorth/source/stylesheets/_schedule.css.scss */
+  .full-schedule .day-heading {
+    float: left;
+    display: block;
+    margin-right: 2.84259%;
+    width: 89.71574%;
+    margin-left: 10.28426%; }
+    /* line 40, /Users/cj/.rvm/gems/ruby-2.0.0-p247/gems/neat-1.5.0/app/assets/stylesheets/grid/_span-columns.scss */
+    .full-schedule .day-heading:last-child {
+      margin-right: 0; }
+    @media screen and (max-width: 768px) {
+      /* line 29, /Users/cj/Projects/truenorth/source/stylesheets/_schedule.css.scss */
+      .full-schedule .day-heading {
+        float: left;
+        display: block;
+        margin-right: 2.84259%;
+        width: 79.43148%;
+        margin-left: 20.56852%; }
+        /* line 40, /Users/cj/.rvm/gems/ruby-2.0.0-p247/gems/neat-1.5.0/app/assets/stylesheets/grid/_span-columns.scss */
+        .full-schedule .day-heading:last-child {
+          margin-right: 0; } }
+    @media screen and (max-width: 480px) {
+      /* line 29, /Users/cj/Projects/truenorth/source/stylesheets/_schedule.css.scss */
+      .full-schedule .day-heading {
+        float: left;
+        display: block;
+        margin-right: 2.84259%;
+        width: 100%;
+        margin-left: 0%; }
+        /* line 40, /Users/cj/.rvm/gems/ruby-2.0.0-p247/gems/neat-1.5.0/app/assets/stylesheets/grid/_span-columns.scss */
+        .full-schedule .day-heading:last-child {
+          margin-right: 0; } }
+    /* line 43, /Users/cj/Projects/truenorth/source/stylesheets/_schedule.css.scss */
+    .full-schedule .day-heading h3 {
+      padding-bottom: .3em; }
+    /* line 47, /Users/cj/Projects/truenorth/source/stylesheets/_schedule.css.scss */
+    .full-schedule .day-heading h4 {
+      padding-bottom: 1em;
+      text-transform: uppercase;
+      letter-spacing: .1em;
+      font-size: 13px;
+      font-family: 'Gotham A', 'Gotham B', 'Helvetica Neue', sans-serif; }
+  /* line 56, /Users/cj/Projects/truenorth/source/stylesheets/_schedule.css.scss */
+  .full-schedule hr {
+    clear: both;
+    width: 100px;
+    height: 0;
+    margin: 0 auto;
+    padding: 20px 0 50px;
+    border: none;
+    text-align: center; }
+    @media screen and (max-width: 480px) {
+      /* line 56, /Users/cj/Projects/truenorth/source/stylesheets/_schedule.css.scss */
+      .full-schedule hr {
+        padding: 0 0 40px; } }
+    /* line 69, /Users/cj/Projects/truenorth/source/stylesheets/_schedule.css.scss */
+    .full-schedule hr:after {
+      display: block;
+      width: 100px;
+      margin: 0 auto;
+      border-bottom: 4px solid #e35a17;
+      content: ""; }
+  /* line 78, /Users/cj/Projects/truenorth/source/stylesheets/_schedule.css.scss */
+  .full-schedule .day {
+    float: left;
+    display: block;
+    margin-right: 2.84259%;
+    width: 100%;
+    padding-bottom: 2em; }
+    /* line 40, /Users/cj/.rvm/gems/ruby-2.0.0-p247/gems/neat-1.5.0/app/assets/stylesheets/grid/_span-columns.scss */
+    .full-schedule .day:last-child {
+      margin-right: 0; }
+    /* line 82, /Users/cj/Projects/truenorth/source/stylesheets/_schedule.css.scss */
+    .full-schedule .day .vevent, .full-schedule .day .break {
+      float: left;
+      display: block;
+      margin-right: 2.84259%;
+      width: 100%;
+      padding-top: 1em;
+      border-bottom: 1px solid #ddd; }
+      /* line 40, /Users/cj/.rvm/gems/ruby-2.0.0-p247/gems/neat-1.5.0/app/assets/stylesheets/grid/_span-columns.scss */
+      .full-schedule .day .vevent:last-child, .full-schedule .day .break:last-child {
+        margin-right: 0; }
+      /* line 87, /Users/cj/Projects/truenorth/source/stylesheets/_schedule.css.scss */
+      .full-schedule .day .vevent:last-of-type, .full-schedule .day .break:last-of-type {
+        border: none; }
+    /* line 92, /Users/cj/Projects/truenorth/source/stylesheets/_schedule.css.scss */
+    .full-schedule .day .break {
+      background: url("/images/bg-diagonal-stripes.png");
+      color: #888;
+      text-align: center;
+      font-style: italic; }
+    /* line 99, /Users/cj/Projects/truenorth/source/stylesheets/_schedule.css.scss */
+    .full-schedule .day .time {
+      float: left;
+      display: block;
+      margin-right: 2.84259%;
+      width: 7.44167%;
+      margin-top: 4px;
+      margin-bottom: 1em;
+      font-size: 15px;
+      font-family: 'Gotham A', 'Gotham B', 'Helvetica Neue', sans-serif;
+      line-height: 140%; }
+      /* line 40, /Users/cj/.rvm/gems/ruby-2.0.0-p247/gems/neat-1.5.0/app/assets/stylesheets/grid/_span-columns.scss */
+      .full-schedule .day .time:last-child {
+        margin-right: 0; }
+      @media screen and (max-width: 768px) {
+        /* line 99, /Users/cj/Projects/truenorth/source/stylesheets/_schedule.css.scss */
+        .full-schedule .day .time {
+          float: left;
+          display: block;
+          margin-right: 2.84259%;
+          width: 17.72593%;
+          margin-top: 5px; }
+          /* line 40, /Users/cj/.rvm/gems/ruby-2.0.0-p247/gems/neat-1.5.0/app/assets/stylesheets/grid/_span-columns.scss */
+          .full-schedule .day .time:last-child {
+            margin-right: 0; } }
+      @media screen and (max-width: 480px) {
+        /* line 99, /Users/cj/Projects/truenorth/source/stylesheets/_schedule.css.scss */
+        .full-schedule .day .time {
+          font-size: 11px; } }
+    /* line 117, /Users/cj/Projects/truenorth/source/stylesheets/_schedule.css.scss */
+    .full-schedule .day .summary {
+      float: left;
+      display: block;
+      margin-right: 2.84259%;
+      width: 89.71574%;
+      margin-right: 0; }
+      /* line 40, /Users/cj/.rvm/gems/ruby-2.0.0-p247/gems/neat-1.5.0/app/assets/stylesheets/grid/_span-columns.scss */
+      .full-schedule .day .summary:last-child {
+        margin-right: 0; }
+      @media screen and (max-width: 768px) {
+        /* line 117, /Users/cj/Projects/truenorth/source/stylesheets/_schedule.css.scss */
+        .full-schedule .day .summary {
+          float: left;
+          display: block;
+          margin-right: 2.84259%;
+          width: 79.43148%; }
+          /* line 40, /Users/cj/.rvm/gems/ruby-2.0.0-p247/gems/neat-1.5.0/app/assets/stylesheets/grid/_span-columns.scss */
+          .full-schedule .day .summary:last-child {
+            margin-right: 0; } }
+      /* line 125, /Users/cj/Projects/truenorth/source/stylesheets/_schedule.css.scss */
+      .full-schedule .day .summary h3 {
+        padding: 0 0 .3em;
+        font-size: 20px; }
+    /* line 131, /Users/cj/Projects/truenorth/source/stylesheets/_schedule.css.scss */
+    .full-schedule .day .person {
+      float: left;
+      display: block;
+      margin-right: 2.84259%;
+      width: 58.86297%; }
+      /* line 40, /Users/cj/.rvm/gems/ruby-2.0.0-p247/gems/neat-1.5.0/app/assets/stylesheets/grid/_span-columns.scss */
+      .full-schedule .day .person:last-child {
+        margin-right: 0; }
+      @media screen and (max-width: 768px) {
+        /* line 131, /Users/cj/Projects/truenorth/source/stylesheets/_schedule.css.scss */
+        .full-schedule .day .person {
+          float: left;
+          display: block;
+          margin-right: 2.84259%;
+          width: 48.57871%; }
+          /* line 40, /Users/cj/.rvm/gems/ruby-2.0.0-p247/gems/neat-1.5.0/app/assets/stylesheets/grid/_span-columns.scss */
+          .full-schedule .day .person:last-child {
+            margin-right: 0; } }
+      @media screen and (max-width: 480px) {
+        /* line 131, /Users/cj/Projects/truenorth/source/stylesheets/_schedule.css.scss */
+        .full-schedule .day .person {
+          float: left;
+          display: block;
+          margin-right: 2.84259%;
+          width: 79.43148%;
+          margin-right: 0; }
+          /* line 40, /Users/cj/.rvm/gems/ruby-2.0.0-p247/gems/neat-1.5.0/app/assets/stylesheets/grid/_span-columns.scss */
+          .full-schedule .day .person:last-child {
+            margin-right: 0; } }
+      /* line 143, /Users/cj/Projects/truenorth/source/stylesheets/_schedule.css.scss */
+      .full-schedule .day .person h3 {
+        padding: 0 0 .3em;
+        font-size: 20px; }
+        /* line 147, /Users/cj/Projects/truenorth/source/stylesheets/_schedule.css.scss */
+        .full-schedule .day .person h3 a {
+          color: #12142a; }
+          /* line 150, /Users/cj/Projects/truenorth/source/stylesheets/_schedule.css.scss */
+          .full-schedule .day .person h3 a:hover {
+            color: #e35a17; }
+      /* line 156, /Users/cj/Projects/truenorth/source/stylesheets/_schedule.css.scss */
+      .full-schedule .day .person .affiliation {
+        display: block;
+        margin: .2em 0 1em;
+        color: #999;
+        text-transform: uppercase;
+        letter-spacing: .1em;
+        font-size: 12px;
+        font-weight: 400;
+        font-family: 'Gotham A', 'Gotham B', 'Helvetica Neue', sans-serif;
+        line-height: 140%; }
+    /* line 169, /Users/cj/Projects/truenorth/source/stylesheets/_schedule.css.scss */
+    .full-schedule .day .photo {
+      float: left;
+      display: block;
+      margin-right: 2.84259%;
+      width: 28.01019%;
+      margin-right: 0; }
+      /* line 40, /Users/cj/.rvm/gems/ruby-2.0.0-p247/gems/neat-1.5.0/app/assets/stylesheets/grid/_span-columns.scss */
+      .full-schedule .day .photo:last-child {
+        margin-right: 0; }
+      @media screen and (max-width: 480px) {
+        /* line 169, /Users/cj/Projects/truenorth/source/stylesheets/_schedule.css.scss */
+        .full-schedule .day .photo {
+          float: left;
+          display: block;
+          margin-right: 2.84259%;
+          width: 100%;
+          margin-right: 0; }
+          /* line 40, /Users/cj/.rvm/gems/ruby-2.0.0-p247/gems/neat-1.5.0/app/assets/stylesheets/grid/_span-columns.scss */
+          .full-schedule .day .photo:last-child {
+            margin-right: 0; } }
+      /* line 178, /Users/cj/Projects/truenorth/source/stylesheets/_schedule.css.scss */
+      .full-schedule .day .photo img {
+        float: right;
+        margin: 0 0 1em;
+        width: 80px;
+        height: 80px; }
+        @media screen and (max-width: 480px) {
+          /* line 178, /Users/cj/Projects/truenorth/source/stylesheets/_schedule.css.scss */
+          .full-schedule .day .photo img {
+            float: none;
+            display: block;
+            margin: 0 auto 1em;
+            width: 120px;
+            height: 120px; } }
