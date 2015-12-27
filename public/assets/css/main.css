@@ -1594,7 +1594,7 @@
 	}
 
 	p, ul, ol, dl, table, blockquote {
-		margin: 0 0 2em 0;
+		margin: 0 0 0 0;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -1637,6 +1637,12 @@
 	h3 {
 		font-size: 1.15em;
 		letter-spacing: 0.025em;
+	}
+
+	h5 {
+		font-size: 1.2em;
+		font-family: Arvo;
+		font-style: bold;
 	}
 
 	sub {
@@ -3246,7 +3252,7 @@ ul {
 }
 .container {
    margin: 0 auto;
-   padding: 20px 50px;
+   padding: 20px 50px 50px 50px;
    background: white;
 }
 
@@ -3473,12 +3479,10 @@ ul {
 }
 
 /*-----SCHEDULE-----*/
-.schedule #top .nav-schedule a {
-  color: rgba(255, 255, 255, 0.35); }
-
- .nav-sub-schedule {
+/* line 24, /Users/cj/Projects/truenorth/source/stylesheets/_schedule.css.scss */
+.nav-sub-schedule {
   width: 100%;
-  /*margin: 0 0 2em;*/
+  margin: 0 0 2em;
   text-align: center; }
   /* line 6, /Users/cj/Projects/truenorth/source/stylesheets/_schedule.css.scss */
   .nav-sub-schedule li {
@@ -3495,59 +3499,10 @@ ul {
       .nav-sub-schedule li {
         font-size: 13px; } }
 
-/* line 24, /Users/cj/Projects/truenorth/source/stylesheets/_schedule.css.scss */
-.full-schedule {
-  float: left;
-  display: block;
-  margin-left: auto;
-  margin-bottom: 80px; }
-  /* line 40, /Users/cj/.rvm/gems/ruby-2.0.0-p247/gems/neat-1.5.0/app/assets/stylesheets/grid/_span-columns.scss */
-  .full-schedule:last-child {
-    margin-right: 0; }
-  /* line 29, /Users/cj/Projects/truenorth/source/stylesheets/_schedule.css.scss */
-  .full-schedule .day-heading {
-    float: left;
-    display: block;
-    margin-right: 2.84259%;
-    width: 89.71574%;
-    margin-left: 10.28426%; }
-    /* line 40, /Users/cj/.rvm/gems/ruby-2.0.0-p247/gems/neat-1.5.0/app/assets/stylesheets/grid/_span-columns.scss */
-    .full-schedule .day-heading:last-child {
-      margin-right: 0; }
-    @media screen and (max-width: 768px) {
-      /* line 29, /Users/cj/Projects/truenorth/source/stylesheets/_schedule.css.scss */
-      .full-schedule .day-heading {
-        float: left;
-        display: block;
-        margin-right: 2.84259%;
-        width: 79.43148%;
-        margin-left: 20.56852%; }
-        /* line 40, /Users/cj/.rvm/gems/ruby-2.0.0-p247/gems/neat-1.5.0/app/assets/stylesheets/grid/_span-columns.scss */
-        .full-schedule .day-heading:last-child {
-          margin-right: 0; } }
-    @media screen and (max-width: 480px) {
-      /* line 29, /Users/cj/Projects/truenorth/source/stylesheets/_schedule.css.scss */
-      .full-schedule .day-heading {
-        float: left;
-        display: block;
-        margin-right: 2.84259%;
-        width: 100%;
-        margin-left: 0%; }
-        /* line 40, /Users/cj/.rvm/gems/ruby-2.0.0-p247/gems/neat-1.5.0/app/assets/stylesheets/grid/_span-columns.scss */
-        .full-schedule .day-heading:last-child {
-          margin-right: 0; } }
-    /* line 43, /Users/cj/Projects/truenorth/source/stylesheets/_schedule.css.scss */
-    .full-schedule .day-heading h3 {
-      padding-bottom: .3em; }
-    /* line 47, /Users/cj/Projects/truenorth/source/stylesheets/_schedule.css.scss */
-    .full-schedule .day-heading h4 {
-      padding-bottom: 1em;
-      text-transform: uppercase;
-      letter-spacing: .1em;
-      font-size: 13px;
-      font-family: 'Gotham A', 'Gotham B', 'Helvetica Neue', sans-serif; }
-  /* line 56, /Users/cj/Projects/truenorth/source/stylesheets/_schedule.css.scss */
-  .full-schedule hr {
+  .schedule {
+  	text-align: left;
+  }
+  .schedule hr {
     clear: both;
     width: 100px;
     height: 0;
@@ -3557,27 +3512,114 @@ ul {
     text-align: center; }
     @media screen and (max-width: 480px) {
       /* line 56, /Users/cj/Projects/truenorth/source/stylesheets/_schedule.css.scss */
-      .full-schedule hr {
+      .schedule hr {
         padding: 0 0 40px; } }
     /* line 69, /Users/cj/Projects/truenorth/source/stylesheets/_schedule.css.scss */
-    .full-schedule hr:after {
-      display: block;
-      width: 100px;
-      margin: 0 auto;
-      border-bottom: 4px solid #e35a17;
-      content: ""; }
-  /* line 78, /Users/cj/Projects/truenorth/source/stylesheets/_schedule.css.scss */
-  .full-schedule .day {
+
+  .schedule .day-heading {
+    text-align: left;
+    float: left;
+    display: block;
+    margin-right: 2.84259%;
+    width: 89.71574%;
+    margin-left: 10.28426%;  }
+    /* line 40, /Users/cj/.rvm/gems/ruby-2.0.0-p247/gems/neat-1.5.0/app/assets/stylesheets/grid/_span-columns.scss */
+    .schedule .day-heading:last-child {
+      margin-right: 0; }
+    @media screen and (max-width: 768px) {
+      /* line 29, /Users/cj/Projects/truenorth/source/stylesheets/_schedule.css.scss */
+      .schedule .day-heading {
+        float: left;
+        display: block;
+        margin-right: 2.84259%;
+        width: 79.43148%;
+        margin-left: 20.56852%; }
+        /* line 40, /Users/cj/.rvm/gems/ruby-2.0.0-p247/gems/neat-1.5.0/app/assets/stylesheets/grid/_span-columns.scss */
+        .schedule .day-heading:last-child {
+          margin-right: 0; } }
+    @media screen and (max-width: 480px) {
+      /* line 29, /Users/cj/Projects/truenorth/source/stylesheets/_schedule.css.scss */
+      .schedule .day-heading {
+        float: left;
+        display: block;
+        margin-right: 2.84259%;
+        width: 100%;
+        margin-left: 0%; }
+        /* line 40, /Users/cj/.rvm/gems/ruby-2.0.0-p247/gems/neat-1.5.0/app/assets/stylesheets/grid/_span-columns.scss */
+        .schedule .day-heading:last-child {
+          margin-right: 0; } }
+    /* line 43, /Users/cj/Projects/truenorth/source/stylesheets/_schedule.css.scss */
+    .schedule .day-heading h3 {
+      padding-bottom: .2em; }
+    /* line 47, /Users/cj/Projects/truenorth/source/stylesheets/_schedule.css.scss */
+    .schedule .day-heading h4 {
+      padding-bottom: 1em;
+      text-transform: uppercase;
+      letter-spacing: .1em;
+      font-size: 13px;
+      font-family: 'Gotham A', 'Gotham B', 'Helvetica Neue', sans-serif; }
+  .schedule .day {
     float: left;
     display: block;
     margin-right: 2.84259%;
     width: 100%;
-    padding-bottom: 2em; }
+    /*padding-bottom: 2em;*/ }
+  .schedule .day .time {
+      float: left;
+      display: block;
+      margin-right: 2.84259%;
+      width: 7.44167%;
+      margin-top: 4px;
+      margin-bottom: 1em;
+      font-size: 15px;
+      font-family: 'Gotham A', 'Gotham B', 'Helvetica Neue', sans-serif;
+      line-height: 140%; }
+.schedule .day .time:last-child {
+        margin-right: 0; }
+      @media screen and (max-width: 768px) {
+        /* line 99, /Users/cj/Projects/truenorth/source/stylesheets/_schedule.css.scss */
+.schedule .day .time {
+          float: left;
+          display: block;
+          margin-right: 2.84259%;
+          width: 17.72593%;
+          margin-top: 5px; }
+          /* line 40, /Users/cj/.rvm/gems/ruby-2.0.0-p247/gems/neat-1.5.0/app/assets/stylesheets/grid/_span-columns.scss */
+   .schedule .day .time:last-child {
+            margin-right: 0; } }
+      @media screen and (max-width: 480px) {
+        /* line 99, /Users/cj/Projects/truenorth/source/stylesheets/_schedule.css.scss */
+  .schedule .day .time {
+          font-size: 11px; } }
+    /* line 117, /Users/cj/Projects/truenorth/source/stylesheets/_schedule.css.scss */
+.schedule .day .summary {
+      float: left;
+      display: block;
+      margin-right: 2.84259%;
+      width: 85%;
+      margin-right: 0; }
+      /* line 40, /Users/cj/.rvm/gems/ruby-2.0.0-p247/gems/neat-1.5.0/app/assets/stylesheets/grid/_span-columns.scss */
+.schedule .day .summary:last-child {
+        margin-right: 0; }
+      @media screen and (max-width: 768px) {
+        /* line 117, /Users/cj/Projects/truenorth/source/stylesheets/_schedule.css.scss */
+.schedule .day .summary {
+          float: left;
+          display: block;
+          margin-right: 2.84259%;
+          width: 75%; }
+          /* line 40, /Users/cj/.rvm/gems/ruby-2.0.0-p247/gems/neat-1.5.0/app/assets/stylesheets/grid/_span-columns.scss */
+      .schedule .day .summary:last-child {
+            margin-right: 0; } }
+      /* line 125, /Users/cj/Projects/truenorth/source/stylesheets/_schedule.css.scss */
+    .schedule .day .summary h3 {
+        padding: 0 0 .3em;
+        font-size: 20px; }
     /* line 40, /Users/cj/.rvm/gems/ruby-2.0.0-p247/gems/neat-1.5.0/app/assets/stylesheets/grid/_span-columns.scss */
-    .full-schedule .day:last-child {
+    .schedule .day:last-child {
       margin-right: 0; }
     /* line 82, /Users/cj/Projects/truenorth/source/stylesheets/_schedule.css.scss */
-    .full-schedule .day .vevent, .full-schedule .day .break {
+    .schedule .day .vevent, .full-schedule .day .break {
       float: left;
       display: block;
       margin-right: 2.84259%;
@@ -3585,10 +3627,10 @@ ul {
       padding-top: 1em;
       border-bottom: 1px solid #ddd; }
       /* line 40, /Users/cj/.rvm/gems/ruby-2.0.0-p247/gems/neat-1.5.0/app/assets/stylesheets/grid/_span-columns.scss */
-      .full-schedule .day .vevent:last-child, .full-schedule .day .break:last-child {
+      .schedule .day .vevent:last-child, .full-schedule .day .break:last-child {
         margin-right: 0; }
       /* line 87, /Users/cj/Projects/truenorth/source/stylesheets/_schedule.css.scss */
-      .full-schedule .day .vevent:last-of-type, .full-schedule .day .break:last-of-type {
+      .schedule .day .vevent:last-of-type, .full-schedule .day .break:last-of-type {
         border: none; }
     /* line 92, /Users/cj/Projects/truenorth/source/stylesheets/_schedule.css.scss */
     .full-schedule .day .break {
@@ -3597,7 +3639,7 @@ ul {
       text-align: center;
       font-style: italic; }
     /* line 99, /Users/cj/Projects/truenorth/source/stylesheets/_schedule.css.scss */
-    .full-schedule .day .time {
+    .schedule .day .time {
       float: left;
       display: block;
       margin-right: 2.84259%;
@@ -3608,47 +3650,53 @@ ul {
       font-family: 'Gotham A', 'Gotham B', 'Helvetica Neue', sans-serif;
       line-height: 140%; }
       /* line 40, /Users/cj/.rvm/gems/ruby-2.0.0-p247/gems/neat-1.5.0/app/assets/stylesheets/grid/_span-columns.scss */
-      .full-schedule .day .time:last-child {
+      .schedule .day .time:last-child {
         margin-right: 0; }
       @media screen and (max-width: 768px) {
         /* line 99, /Users/cj/Projects/truenorth/source/stylesheets/_schedule.css.scss */
-        .full-schedule .day .time {
+        .schedule .day .time {
           float: left;
           display: block;
           margin-right: 2.84259%;
           width: 17.72593%;
           margin-top: 5px; }
           /* line 40, /Users/cj/.rvm/gems/ruby-2.0.0-p247/gems/neat-1.5.0/app/assets/stylesheets/grid/_span-columns.scss */
-          .full-schedule .day .time:last-child {
+          .schedule .day .time:last-child {
             margin-right: 0; } }
       @media screen and (max-width: 480px) {
         /* line 99, /Users/cj/Projects/truenorth/source/stylesheets/_schedule.css.scss */
-        .full-schedule .day .time {
+        .schedule .day .time {
           font-size: 11px; } }
     /* line 117, /Users/cj/Projects/truenorth/source/stylesheets/_schedule.css.scss */
-    .full-schedule .day .summary {
+    .schedule .day .summary {
       float: left;
       display: block;
       margin-right: 2.84259%;
       width: 89.71574%;
       margin-right: 0; }
       /* line 40, /Users/cj/.rvm/gems/ruby-2.0.0-p247/gems/neat-1.5.0/app/assets/stylesheets/grid/_span-columns.scss */
-      .full-schedule .day .summary:last-child {
+      .schedule .day .summary:last-child {
         margin-right: 0; }
       @media screen and (max-width: 768px) {
         /* line 117, /Users/cj/Projects/truenorth/source/stylesheets/_schedule.css.scss */
-        .full-schedule .day .summary {
+        .schedule .day .summary {
           float: left;
           display: block;
           margin-right: 2.84259%;
           width: 79.43148%; }
           /* line 40, /Users/cj/.rvm/gems/ruby-2.0.0-p247/gems/neat-1.5.0/app/assets/stylesheets/grid/_span-columns.scss */
-          .full-schedule .day .summary:last-child {
+          .schedule .day .summary:last-child {
             margin-right: 0; } }
       /* line 125, /Users/cj/Projects/truenorth/source/stylesheets/_schedule.css.scss */
-      .full-schedule .day .summary h3 {
+      .schedule .day .summary h3 {
         padding: 0 0 .3em;
         font-size: 20px; }
+      .schedule .day .summary p {
+        padding: 0 0 0.5em ;
+        font-size: 20px; }
+
+
+
     /* line 131, /Users/cj/Projects/truenorth/source/stylesheets/_schedule.css.scss */
     .full-schedule .day .person {
       float: left;
