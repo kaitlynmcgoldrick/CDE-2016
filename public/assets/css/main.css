@@ -1595,7 +1595,7 @@
 
 	p {
 		margin: 0 0 0 0;
-		text-align: justify;
+		text-align: center;
 	}
 
 	ul, ol, dl, table, blockquote {
@@ -1648,6 +1648,11 @@
 		font-size: 1.2em;
 		font-family: 'Arvo', sans-serif;
 		font-style: bold;
+	}
+
+	h6 {
+		margin: 0 0 0 0;
+		text-align: justify;
 	}
 
 	sub {
@@ -2162,10 +2167,10 @@
 
 		.wrapper.style2 {
 			background-color: #7490C3;
-			background-image: url("images/light-bl.svg"), url("images/light-br.svg");
+			background-image: url("rightbottom.svg"), url("images/rightbottom.svg");
 			background-position: bottom left, bottom right;
 			background-repeat: no-repeat, no-repeat;
-			background-size: 25em, 25em;
+			/*background-size: 25em, 25em;*/
 			color: #fff;
 		}
 
@@ -2578,7 +2583,7 @@
 
 	#footer {
 		background: #266381;
-		color: #7c8081;
+		color: #fff;
 		padding: 2em 2em 2em 2em;
 		text-align: center;
 	}
