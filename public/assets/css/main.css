@@ -2198,7 +2198,6 @@ strong {
 
 		.wrapper.style2 {
 			background-color: rgba(44, 117, 188, 0.9);
-			background-image: url("rightbottom.svg"), url("images/rightbottom.svg");
 			background-position: bottom left, bottom right;
 			background-repeat: no-repeat, no-repeat;
 			/*background-size: 25em, 25em;*/
@@ -2210,12 +2209,13 @@ strong {
 			}
 
 			.wrapper.style2 .button.special {
-				background: #fff;
+				background: #2c75bc;
 				border-color: #fff;
 				color: #83d3c9 !important;
 			}
 
 				.wrapper.style2 .button.special:hover {
+                    background: rgba(117, 209, 247, 1);
 					border-color: inherit !important;
 					color: #fff !important;
 				}
@@ -2233,7 +2233,7 @@ strong {
 		}
 
 		.wrapper.style5 {
-			background-color: rgba(28, 70, 147, 0.9);
+			background-color: rgba(44, 117, 188, 0.9);
 			color: #fff;
 		}
 
