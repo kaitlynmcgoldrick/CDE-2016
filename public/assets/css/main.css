@@ -70,6 +70,14 @@ video {
    opacity: .5;
 }
 
+strong {
+    color: rgba(17, 30, 69, 1);
+}
+
+.picSize{
+    zoom: 25%;
+}
+
 
 /* Box Model */
 
@@ -1652,7 +1660,7 @@ video {
     display: block;
     width: 100px;
     margin: 30px auto 0;
-    border-bottom: 4px solid #357e97;
+    border-bottom: 4px solid #75d1f7;
     content: "";
 	}
 
@@ -1979,8 +1987,9 @@ video {
 			cursor: default;
 			display: block;
 			margin: 0 0 1.5em 0;
-			opacity: 0.35;
+			opacity: 0.9;
 			text-align: center;
+            color: rgba(28, 70, 147, 1)
 		}
 
 			.icon.featured:before {
@@ -2147,8 +2156,8 @@ video {
 		input[type="submit"].special,
 		input[type="reset"].special,
 		.button.special {
-			background: #83d3c9;
-			border-color: #83d3c9;
+			background: #2c75bc;
+			border-color: #2c75bc;
 			color: #fff !important;
 		}
 
@@ -2156,8 +2165,8 @@ video {
 			input[type="submit"].special:hover,
 			input[type="reset"].special:hover,
 			.button.special:hover {
-				background: #96dad1 !important;
-				border-color: #96dad1 !important;
+				background: #75d1f7 !important;
+				border-color: #75d1f7 !important;
 			}
 
 		input[type="button"].fit,
@@ -2188,7 +2197,7 @@ video {
 		}
 
 		.wrapper.style2 {
-			background-color: rgba(116, 144, 195, 0.9);
+			background-color: rgba(44, 117, 188, 0.9);
 			background-image: url("rightbottom.svg"), url("images/rightbottom.svg");
 			background-position: bottom left, bottom right;
 			background-repeat: no-repeat, no-repeat;
@@ -2224,7 +2233,7 @@ video {
 		}
 
 		.wrapper.style5 {
-			background-color: rgba(131, 211, 211, 0.9);
+			background-color: rgba(28, 70, 147, 0.9);
 			color: #fff;
 		}
 
@@ -2524,6 +2533,8 @@ video {
 /*				border-top: solid 2px;*/
 				margin: 0 0 2em 0;
 				padding: 3px 0 3px 0;
+                zoom: 50%;
+                -moz-transform: scale(0.5);
 			}
 
 				#banner .inner header h2 {
@@ -2590,8 +2601,8 @@ video {
 
 	#cta {
 		background-attachment: scroll, scroll, scroll, fixed;
-		background-color: #645862;
-		background-image: url("images/light-tl.svg"), url("images/light-tr.svg"), url("images/overlay.png"), url("../../images/banner.jpg");
+		background-color:  rgba(17, 30, 69, 0.9) ;
+/*		background-image: url("images/light-tl.svg"), url("images/light-tr.svg"), url("images/overlay.png"), url("../../images/banner.jpg");*/
 		background-position: top left, top right, top left, bottom center;
 		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
 		background-size: 25em, 25em, auto, cover;
@@ -2607,7 +2618,7 @@ video {
 /* Footer */
 
 	#footer {
-		background: #266381;
+		background: #111e45;
 		color: #fff;
 		padding: 2em 2em 2em 2em;
 		text-align: center;
