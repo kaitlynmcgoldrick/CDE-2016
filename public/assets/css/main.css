@@ -2077,7 +2077,8 @@ strong {
 	}
 
 		ul.buttons:last-child {
-			margin-bottom: 0;
+            margin-top: 25px;
+/*			margin-bottom: 0;*/
 		}
 
 		ul.buttons li {
@@ -2141,9 +2142,9 @@ strong {
 		-webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
-		background: none;
-		border: solid 1px;
-		color: inherit;
+		background: #2c75bc;
+		border: solid #fff 1px;
+		color: #fff;
 		cursor: pointer;
 		display: inline-block;
 		font-size: 0.8em;
@@ -2161,7 +2162,9 @@ strong {
 		input[type="submit"]:hover,
 		input[type="reset"]:hover,
 		.button:hover {
-			background: rgba(188, 202, 206, 0.15);
+            background: rgba(117, 209, 247, 1);
+            color: #fff;
+/*			background: rgba(188, 202, 206, 0.15);*/
 			border-color: inherit;
 		}
 
@@ -2234,7 +2237,7 @@ strong {
 				}
 
 		.wrapper.style3 {
-			background: rgba(255,255,255, 0.9);
+			background: #fff;
 			color: inherit;
 		}
 
@@ -3331,7 +3334,7 @@ ul {
 .container {
 /*   margin: 0 auto;*/
    padding: 20px 50px 50px 50px;
-   background: rgba(255,255,255, 0.9);
+   background: #fff;
 }
 
 #sticky-social {
