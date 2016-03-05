@@ -65,6 +65,14 @@ video {
   -webkit-transition: 1s opacity;
   transition: 1s opacity;
 }
+
+@media screen and (max-width: 736px) {
+      /* line 29, /Users/cj/Projects/truenorth/source/stylesheets/_schedule.css.scss */
+    video {
+        display: none; 
+    }
+}
+
 .stopfade { 
    opacity: .5;
 }
@@ -2581,6 +2589,7 @@ strong {
 				margin: 2em 0 0 0;
 			}
 
+
 /* Main */
 
 	#main {
@@ -3016,7 +3025,7 @@ strong {
 					}
 
 					#navButton .toggle:after {
-						background: rgba(163, 169, 170, 0.75);
+						background: rgb(28, 70, 147);
 						border-radius: 2px;
 						content: '';
 						height: 40px;
@@ -3130,6 +3139,7 @@ strong {
 
 			body {
 				min-width: 320px;
+                background-image: url("http://www.berrisuites.ca/images/montreal.jpg");
 			}
 
 			h2 {
@@ -3380,6 +3390,12 @@ ul {
 #sticky-social a[class*="instagram"],
 #sticky-social a[class*="instagram"]:hover,
 #sticky-social a[class*="instagram"] span { background: #517fa4; }  
+
+@media screen and (max-width: 768px) {
+      /* line 29, /Users/cj/Projects/truenorth/source/stylesheets/_schedule.css.scss */
+      #sticky-social {
+        display: none; } 
+}
 
 /*--------Mission container------*/
 
@@ -3887,3 +3903,26 @@ ul {
     }
 
 
+	@media screen and (max-width: 736px) {
+
+        #banner .inner {
+			-moz-animation: reveal-banner 1s 0.25s ease-in-out;
+			-webkit-animation: reveal-banner 1s 0.25s ease-in-out;
+			-ms-animation: reveal-banner 1s 0.25s ease-in-out;
+			animation: reveal-banner 1s 0.25s ease-in-out;
+			-moz-animation-fill-mode: forwards;
+			-webkit-animation-fill-mode: forwards;
+			-ms-animation-fill-mode: forwards;
+			animation-fill-mode: forwards;
+			background: rgba(255, 255, 255, 0.7);
+            font-weight: bold;
+			color: #111e45;
+			display: inline-block;
+			opacity: 0;
+            padding-left: 5em;
+            padding-right: 5em;
+/*			padding: 3em;*/
+			text-align: center;
+		}
+
+	}
